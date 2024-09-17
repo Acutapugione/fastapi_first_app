@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "first-app"
+version = "0.1.0"
+description = ""
+authors = ["Acutapugione <acuta.pugione@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.114.2"
+hypercorn = "^0.17.3"
+
+[tool.poetry.scripts]
+start = "first_app:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
